@@ -1,0 +1,421 @@
+body,
+html {
+    height: 100%;
+    overflow: hidden;
+    background: #1d1d1d
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+a {
+    text-decoration: none
+}
+
+img {
+    border: none;
+    vertical-align: top
+}
+
+#control {
+    z-index: 100;
+    height: 50px;
+    background: #262626;
+    position: relative
+}
+
+#control .device-select {
+    float: left;
+    height: 50px
+}
+
+#control .device-select>a {
+    margin: 0 6px;
+    font-size: 26px;
+    line-height: 50px
+}
+
+#control .device-select>a.desktop {
+    font-size: 22px
+}
+
+#control .device-select>a.mobile {
+    font-size: 28px
+}
+
+#control .device-select>a i {
+    color: #646464
+}
+
+#control .device-select>a.active i {
+    color: #f8bc06
+}
+
+#control .theme-select {
+    float: left
+}
+
+#control .theme-select>span {
+    padding: 0 10px 0 30px;
+    color: #909090;
+    font-size: 12px;
+    line-height: 50px;
+    vertical-align: middle;
+    font-family: Arial, "微软雅黑";
+    border-left: 1px solid #4E4E4E
+}
+
+#control .theme-select>nav {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    line-height: 50px;
+    vertical-align: middle
+}
+
+#control .theme-select>nav>span {
+    cursor: pointer;
+    margin: 0 4px;
+    position: relative
+}
+
+#control .theme-select>nav>span>i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 8px;
+    height: 8px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+#control .theme-select>nav>span.theme-b {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box
+}
+
+#control .theme-select>nav>span.bblue,
+#control .theme-select>nav>span.bgreen,
+#control .theme-select>nav>span.bred,
+#control .theme-select>nav>span.bwhite,
+#control .theme-select>nav>span.byellow {
+    border: 1px solid #404040;
+    background: #000
+}
+
+#control .theme-select>nav>span.wblack,
+#control .theme-select>nav>span.wblue,
+#control .theme-select>nav>span.wgreen,
+#control .theme-select>nav>span.wred,
+#control .theme-select>nav>span.wyellow {
+    border: 1px solid #404040;
+    background: #fff
+}
+
+#control .theme-select>nav>span.bblue i,
+#control .theme-select>nav>span.wblue i {
+    background-color: #3d46ff
+}
+
+#control .theme-select>nav>span.bgreen i,
+#control .theme-select>nav>span.wgreen i {
+    background-color: #3ed216
+}
+
+#control .theme-select>nav>span.bred i,
+#control .theme-select>nav>span.wred i {
+    background-color: #e40807
+}
+
+#control .theme-select>nav>span.bwhite i,
+#control .theme-select>nav>span.wblack i {
+    background-color: #cacaca
+}
+
+#control .theme-select>nav>span.byellow i,
+#control .theme-select>nav>span.wyellow i {
+    background-color: #eeb814
+}
+
+#control .theme-select>nav>span.active i {
+    width: 16px;
+    height: 16px
+}
+
+#control .qrcode {
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 30px;
+    cursor: pointer;
+    background: url(../icon/qricon.png) no-repeat center center/18px 18px
+}
+
+#control .qrcode .qrcondeArea {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: none;
+    top: 120%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding-bottom: 20px;
+    width: 120px;
+    overflow: hidden;
+    border: 15px solid #fff;
+    border-radius: 2px;
+    background: #fff
+}
+
+#control .qrcode:hover .qrcondeArea {
+    display: block
+}
+
+#control .qrcode .qrcondeArea canvas {
+    width: 100%;
+    height: 100%
+}
+
+#control .qrcode .qrcondeArea:after {
+    font-family: Arial, "微软雅黑";
+    color: #666;
+    content: "扫描二维码手机预览";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px
+}
+
+#control .trybtn {
+    margin-top: 10px;
+    margin-right: 30px;
+    float: right;
+    width: 100px;
+    height: 30px;
+    border-radius: 2px;
+    background: #ff592d;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: "微软雅黑"
+}
+
+#control .controlMask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 1;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 22px;
+    line-height: 50px;
+    color: #fff
+}
+
+#control .controlMask:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 30px;
+    background: url(../icon/1442417914556.png) no-repeat center left/auto 100%
+}
+
+#index-logo {
+    font-family: Arial;
+    float: left;
+    padding: 0 30px;
+    color: #dadada;
+    font-size: 14px;
+    line-height: 50px;
+    vertical-align: middle
+}
+
+#mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    background: url(../icon/loading.gif) no-repeat center center;
+    background-color: #000
+}
+
+.tablet #mask {
+    top: 10px;
+    bottom: 10px
+}
+
+.mobile #mask {
+    left: 5px;
+    right: 5px
+}
+
+#contentArea {
+    height: calc(100% - 50px);
+    -webkit-transition: all .36s ease;
+    transition: all .36s ease;
+    position: relative
+}
+
+#contentArea.mobile {
+    width: 360px;
+    height: calc(100% - 300px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto
+}
+
+#contentArea.mobile>iframe {
+    width: calc(100% - 10px);
+    border: 5px solid #f4f5f7;
+    border-top-width: 0;
+    border-bottom-width: 0
+}
+
+#contentArea.mobile .header {
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    height: 50px;
+    background: #f4f5f7;
+    border-radius: 30px 30px 0 0
+}
+
+#contentArea.mobile .header i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50px;
+    height: 6px;
+    border-radius: 10px;
+    background: #ccc
+}
+
+#contentArea.mobile .header i::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    left: -14px;
+    border-radius: 100%;
+    background: #ccc
+}
+
+#contentArea.mobile .footer {
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    height: 50px;
+    background: #f4f5f7;
+    border-radius: 0 0 30px 30px
+}
+
+#contentArea.mobile .footer i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #ccc
+}
+
+#contentArea.tablet {
+    width: 980px;
+    height: calc(100% - 200px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto
+}
+
+#contentArea.tablet>iframe {
+    height: calc(100% - 20px);
+    border: 10px solid #f4f5f7;
+    border-left-width: 0;
+    border-right-width: 0
+}
+
+#contentArea.tablet .header {
+    position: absolute;
+    height: 100%;
+    width: 30px;
+    left: -30px;
+    background: #f4f5f7;
+    border-radius: 24px 0 0 24px
+}
+
+#contentArea.tablet .header i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 8px;
+    width: 8px;
+    border-radius: 10px;
+    background: #ccc
+}
+
+#contentArea.tablet .footer {
+    position: absolute;
+    top: 0;
+    right: -44px;
+    width: 44px;
+    height: 100%;
+    background: #f4f5f7;
+    border-radius: 0 24px 24px 0
+}
+
+#contentArea.tablet .footer i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #ccc
+}
+
+#contentFrame {
+    width: 100%;
+    height: 100%
+}

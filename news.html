@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>News</title>
+		<link rel="shortcut icon" href="favicon.png" />
+		<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/goTotop.js"></script>
+	    <style>
+	    .imgBox{
+	    	overflow:hidden;
+	    	padding:0px;
+	    }	
+	    .imgBox .a_img{
+	    	display:block;
+	    	width:110%;
+	    	height:100%;
+	    	
+	    	overflow:hidden;
+	    }
+	    .imgBox .a_img>img{
+	    	display:block;
+	    	width:110%;
+	    	height:100%;
+	    }	
+	    .items_tag{
+	    	padding:20px 0;
+	    }
+	    .items_tag>a{
+	    	display:inline-block;
+	    	    color: #9e9e9e;
+	    	    padding:0 10px;
+	    	    background: #f5f5f5;
+	    	    margin:0 2px;
+	    	    line-height:25px;
+	    }
+	     .items_tag>a:hover{
+	     	color:#666;
+	     
+	     }
+	    .items_tag>i{
+	    	font-weight:normal;
+	    	color:#555;
+	    	font-size:25px;
+	    	line-height:12px;
+	    }
+	    .padding_tb{
+	    	padding:20px 0;
+	    	border-top:1px dotted #e7e7e7;
+	    	border-bottom:1px dotted #e7e7e7;
+	    }
+	      .rectborder {
+		    border-color: #ffbd00;
+		}
+		 .rectborder {
+		    width: calc(100% + 20px);
+		    height: calc(100% + 20px);
+		    position: absolute;
+		    left: -10px;
+		    top: -10px;
+		    border: #ffbd00 1px solid;
+		    transition: all ease-out .4s;
+
+		}
+		.all:hover .rectborder{
+			transform: scale(0.8);
+		}
+		@media (max-width:992px){
+			.hm_icon_addrect{
+			position:absolute;
+			font-style:normal;
+			font-size:70px;
+			color: #ffbd00;
+			left:47%;
+			top:44%;
+			margin-left:-10%;
+			margin-top:-8%;
+			/*display:none;*/
+			animation:addrect ease-out .4s;
+			 transition: all ease-out .4s;
+			}
+		}
+		@media (min-width:993px){
+			.hm_icon_addrect{
+			position:absolute;
+			font-style:normal;
+			font-size:70px;
+			color: #ffbd00;
+			left:50%;
+			top:50%;
+			margin-left:-10%;
+			margin-top:-8%;
+			animation:addrect ease-out .4s;
+			 transition: all ease-out .4s;
+			}
+		}
+		
+		@keyframes addrect{
+			from{
+				margin-top:-8%;
+			}
+			to{
+				display:block;
+				margin-top:-15%;
+			}
+		}
+		.all:hover .hm_icon_addrect{
+			margin-top:-15%;
+			display:block;
+		}
+	    </style>
+	</head>
+	<body data-spy="scroll" data-target="#scroll">
+						 	<!--导航栏-->
+   		 <nav class="navbar wjs_nav" role="navigation">
+         	<div class="container" id="scroll" >
+	        <!-- 移动端显示，PC端不显示-->
+	            <div class="navbar-header">
+	                <!-- 移动端右侧的展开按钮 -->
+	                <div class="top_logo col-xs-3 ">
+					 	<img src="images/favicon.png" alt="" />
+				    </div>
+	               <div class="col-xs-9 " >
+		                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                </button> 
+	               </div>
+	            </div>
+		        <!-- 中间的导航 -->
+		        <div class="collapse navbar-collapse affixx ul_box" id="bs-example-navbar-collapse-1" >
+		          <ul class="nav navbar-nav con" >
+		            <li ><a href="index.html">首页 </a></li>
+		            <li ><a href="create.html" >创意独特</a></li>
+		            <li  ><a href="project.html">手工品</a></li>
+		            <li><a href="#">关于<span class="navbar-down"></span></a></li>
+		            <li class="active"><a href="news.html">新闻</a></li>
+		            <li><a href="#">招聘</a></li>
+		          </ul>
+		          <ul class="nav navbar-nav navbar-right">
+		            <li><a href="#"></a></li>
+		          </ul></div>
+		        </div>
+		      </div>
+		</nav>
+		<!--顶部导航栏结束-->
+		<!--分隔线-->
+		<div class="container-fluid HR margintop">
+			<div class="hr"></div>
+		</div>
+    	<!--位置导航开始-->
+    	<div class="container">
+    		<div class="position_nav hidden-sm hidden-md  hidden-xs">
+    			<ul>
+    				<li>您的位置：</li>
+    				<li><a href="index.html">首页</a></li>
+    				<li><a href="#">></a></li>
+    				<li class="bottom"><a href="create.html">新闻</a></li>
+    			</ul>
+    		</div>
+    	</div>
+    	<!--位置导航结束-->
+    	<!--分隔线-->
+		<div class="container-fluid HR">
+			<div class="hr"></div>
+		</div>
+		<!--------------新闻标题------------------>
+		<div class="nav_box hidden-xs hidden-md hidden-sm">
+			<ul class="">
+				<li class="nav_active"><a href="#">全部</a></li>
+				<li><a href="#">公司新闻</a></li>
+				<li><a href="#">行业新闻</a></li>
+				<li><a href="#">媒体关注</a></li>
+			</ul>
+		</div>
+		<!----------------------小新闻1------------>
+		<div class="container ">	
+			<div class="row  padding_tb all">
+				<div class="col-xs-4 imgBox">
+						<div class="rectborder"></div>
+						<i class="hm_icon hm_icon_addrect in  hidden-xs"></i>
+						<a href="#" class="a_img"><img src="images/1493282708411.jpg" alt="" /></a>
+				</div>
+				<div class="col-xs-8"> 
+						<p class="b_tit ellipsis">全新清晰无痕粉底液升级上市！</p>
+						<p class="b_time ellipsis">2017-04-05</p>
+						<p class="decription">手机、相机、聚光灯下、街头抓拍……面对生活中无处不在的高清镜头、挑剔目光，你的妆容够无懈可击吗？</p>
+						<div class="items_tag hidden-xs ">
+							<i class="hm_icon hm_icon_booksmake"></i>
+							<a href="#">补水</a>
+							<a href="#">美白</a>
+							<a href="#">修复</a>
+						</div>
+						<a href="#" class="many hidden-lg hidden-md">MORE</a>
+				</div>
+			</div><div class="row  padding_tb all">
+				<div class="col-xs-4 imgBox">
+						<div class="rectborder"></div>
+						<i class="hm_icon hm_icon_addrect in hidden-xs"></i>
+						<a href="#" class="a_img"><img src="images/1493282719788.jpg" alt="" /></a>
+				</div>
+				<div class="col-xs-8"> 
+						<p class="b_tit ellipsis">2017全新HOLIDAY LOOK</p>
+						<p class="b_time ellipsis">2016-12-08</p>
+						<p class="decription">派对季的邀约早已应接不暇，霓虹闪烁覆盖的大街小巷勾起痒痒的表演欲！</p>
+						<div class="items_tag hidden-xs ">
+							<i class="hm_icon hm_icon_booksmake"></i>
+							<a href="#">香水</a>
+							<a href="#">美白</a>
+							<a href="#">修复</a>
+						</div>
+						<a href="#" class="many hidden-lg hidden-md">MORE</a>
+				</div>
+			</div>
+			<div class="row  padding_tb all">
+				<div class="col-xs-4 imgBox">
+						<div class="rectborder"></div>
+						<i class="hm_icon hm_icon_addrect in  hidden-xs"></i>
+						<a href="#" class="a_img"><img src="images/1493283242619.jpg" alt="" /></a>
+				</div>
+				<div class="col-xs-8"> 
+						<p class="b_tit ellipsis">全新双用水粉霜，重新定义妆容新'裸'主义！</p>
+						<p class="b_time ellipsis">2017-03-05</p>
+						<p class="decription">“全新WATER BLEND双用水粉霜，更加易于使用，更具持久度且不晕染，只要轻轻一涂，就能提亮肤色，打造水润轻薄的完美裸妆” ——品牌创始人兼艺术总监Dany Sanz</p>
+						<div class="items_tag hidden-xs ">
+							<i class="hm_icon hm_icon_booksmake"></i>
+							<a href="#">香水</a>
+							<a href="#">美白</a>
+							<a href="#">修复</a>
+						</div>
+						<a href="#" class="many hidden-lg hidden-md">MORE</a>
+				</div>
+			</div>
+			<div class="row  padding_tb all">
+				<div class="col-xs-4 imgBox">
+						<div class="rectborder"></div>
+						<i class="hm_icon hm_icon_addrect in hidden-xs"></i>
+						<a href="#" class="a_img"><img src="images/1493283346135.jpg" alt="" /></a>
+				</div>
+				<div class="col-xs-8"> 
+						<p class="b_tit ellipsis">《中国新歌声》圆满收官，自然护肤最强音唱响鸟巢！</p>
+						<p class="b_time ellipsis">2016-12-08</p>
+						<p class="decription">持续三个月的浙江卫视法兰琳卡《中国新歌声》于昨晚20:00在鸟巢迎来总决赛，格莱美御用混音师，5.1环绕立体声效，四位导师六强学员歌声燃爆鸟巢，观众直呼过瘾！ </p>
+						<div class="items_tag hidden-xs ">
+							<i class="hm_icon hm_icon_booksmake"></i>
+							<a href="#">美白</a>
+							<a href="#">修复</a>
+							<a href="#">补水</a>
+						</div>
+						<a href="#" class="many hidden-lg hidden-md">MORE</a>
+				</div>
+			</div>
+			<div class="row  padding_tb all">
+				<div class="col-xs-4 imgBox">
+						<div class="rectborder"></div>
+						<i class="hm_icon hm_icon_addrect in   hidden-xs"></i>
+						<a href="#" class="a_img"><img src="images/1488269046957.png" alt="" /></a>
+				</div>
+				<div class="col-xs-8"> 
+						<p class="b_tit ellipsis">拿下中国化妆品行业“奥斯卡”，LADIES的创新基因到底有多强大？</p>
+						<p class="b_time ellipsis">2016-12-08</p>
+						<p class="decription">喜讯！在7月22日举行的“2016中国化妆品蓝玫奖”颁奖典礼上，法兰琳卡荣获2016中国化妆品蓝玫奖“年度创新品牌”！</p>
+						<div class="items_tag hidden-xs ">
+							<i class="hm_icon hm_icon_booksmake"></i>
+							<a href="#">修复</a>
+							<a href="#">补水</a>
+						</div>
+						<a href="#" class="many hidden-lg hidden-md">MORE</a>
+				</div>
+			</div>
+			<div class="row  padding_tb all">
+				<div class="col-xs-4 imgBox">
+						<div class="rectborder"></div>
+						<i class="hm_icon hm_icon_addrect in  hidden-xs"></i>
+						<a href="#" class="a_img"><img src="images/1493283390154.jpg" alt="" /></a>
+				</div>
+				<div class="col-xs-8"> 
+						<p class="b_tit ellipsis">创新者，无所惧 ——LAIDES力挺原创</p>
+						<p class="b_time ellipsis">2016-12-06</p>
+						<p class="decription">7月4日，备受瞩目的“中国好声音”名称归属案复议消息再次传遍业界。</p>
+						<div class="items_tag hidden-xs ">
+							<i class="hm_icon hm_icon_booksmake"></i>
+							<a href="#">香水</a>
+						</div>
+						<a href="#" class="many hidden-lg hidden-md">MORE</a>
+				</div>
+			</div>
+		</div>
+		<!--侧边导航开始-->
+		<!--手机端显示-->
+		<!--大屏幕显示-->
+		<div class="sider hidden-xs ">	
+			<a href="#" class="Rect"><span class="hm_icon hm_icon_weibo"></span></a>
+			<a href="#" class="Rect"><span class="hm_icon hm_icon_weixin"></span></a>
+			<a href="#" class="Rect"><span class="hm_icon hm_icon_tel"></span></a>
+			<a href="#" class="Rect" id="top"><span class="glyphicon glyphicon-menu-up"></span></a>
+		</div>
+		<!--小屏幕-->	
+		<div class="Side hidden-md hidden-lg hidden-sm">
+		<div class="collapse text_decoration" id="collapseExample">
+		  <div class="Sider">
+		  	<a href="#" class="angle"><span class="hm_icon hm_icon_weibo"></span></a>
+			<a href="#" class="angle"><span class="hm_icon hm_icon_weixin"></span></a>
+			<a href="#" class="angle"><span class="hm_icon hm_icon_tel"></span></a>
+		  </div>
+		</div>
+		<a class="add hm_icon hm_icon_add add_icon"  data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+		</a>
+		</div>
+		<!--js---------------- -->
+		<script type="text/javascript">
+    	toTop('top',false);
+		</script>
+		<script src="lib/jquery/dist/jquery.js"></script>
+		<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

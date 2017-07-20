@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* CSS Document */
+.agent-pc ::-webkit-scrollbar-thumb:hover{background-color:#ffbd00}
+
+#header .nav > div.move{ background-color:#ffbd00;}
+
+#indexPage #topSlider .owl-theme .owl-nav [class*="owl-"]:hover{background-color: rgba(255,189,0,.5);}
+#indexPage #topSlider .progress{background-color: rgba(255,189,0,.8);}
+
+.module .container_category a .move{background-color: rgba(255,189,0,.7);}
+
+.mlist.service_tabs .tab_button .content_list .item_block:hover, .module.mcustomize .description a.more:hover{background-color: #ffbd00;border-color: #ffbd00;}
+.mlist.service_tabs .tab_content .owl-theme .owl-nav > div:hover{background-color: #ffbd00;border-color: #ffbd00;}
+.mlist.service_tabs .tab_button .content_list .item_block.active .item_info .nums{ color:#ffbd00}
+
+.mlist.project .content_list .item_block .item_wrapper, .mlist.team .content_list .item_block:hover .item_wrapper{background-color: rgba(255,189,0,.9);}
+#fixed_projectPost #postWrapper #postInfo #postControl .button:hover{background-color: #ffbd00;border-color: #ffbd00;}
+#fixed_projectPost #imageWrapper .owl-theme .owl-nav div:hover{background-color: #ffbd00;}
+
+.module.mcustomize .description a.more::before{background-color: #ffbd00;}
+
+.mlist.team .content_list .item_block .item_img .rectborder{border-color: rgba(255,189,0,.9);}
+.mlist.team .content_list .item_block .item_img .icon{background-color: #ffbd00;}
+.mlist.team .content_list .item_block:hover .item_wrapper{border-color: rgba(255,189,0,.9);background-color: rgba(255,189,0,.9);}
+.mlistpost.team #postWrapper #postInfo .wrapper .description a.more{background-color: #ffbd00;}
+
+.mlist.news .content_list .item_block .item_img .rectborder{border-color: rgba(255,189,0,.9);}
+.mlist.news .content_list .item_block .item_img .icon{background-color: #ffbd00;}
+.mlistpost.news #listContent .item_tags a:hover{background-color: #ffbd00;}
+
+#contactinfo div a:hover{background-color: #ffbd00;border-color: #ffbd00;}
+#contactform p .inputtxt.submit:hover{background-color: #ffbd00;border-color: #ffbd00;}
+
+.container_target a:last-child::before{background-color: #ffbd00;}
+
+#online_open:hover,#shares a:hover{background-color: #ffbd00;border-color: #ffbd00;}
+
+#openAssist,#assistBtn a{background-color: rgba(255,189,0,.8);}
+
+
+html, body{ background:#fff; color:#444}
+a, a i{ color:#333}
+a:hover, a.active{ color:#000}
+
+#header{ border-bottom:none}
+#header .nav > li > a{ color:#fff}
+#header .nav > li > a .fa-angle-down{ color:#9e9e9e}
+#header .nav > li:hover a span, #header .nav > li a.active span, #header .nav > li:hover a i, #header .nav > li a.active i{ color:#bdbdbd}
+#header .nav .subnav li a{ color:#999}
+
+/*#header{ background-color:rgba(255,255,255,.9); border-color:#eaeaea;}
+#header.mini{box-shadow: 0 0 10px rgba(0,0,0,.1);}
+#header .nav > li > a{ color:#555}
+#header .nav > li:hover a span, #header .nav > li a.active span, #header .nav > li:hover a i, #header .nav > li a.active i{ color:#333}
+#header .nav .subnav li a{ color:#999}
+#header .nav .subnav li a:hover, #header .nav .subnav li a.active{background-color: #f8f8f8;color:#333}*/
+
+
+#indexPage .module {border-color:#eaeaea;}
+#indexPage .module .container_header .title{ color:#555;}
+#indexPage .module .container_header::before{background-color: #eaeaea;}
+.module .container_category a.active{ color:#333}
+.module .container_category a.active:hover{ color:#fff}
+.module .container_category a::after{background-color:#e9e9e9}
+
+#indexPage #topSlider .content_list[data-slider-mode="3"] .owl-stage-outer::before, #indexPage #topSlider .content_list[data-slider-mode="3"] .owl-stage-outer::after{ border-color:#fff; background-color:rgba(255,255,255,.5)}
+
+.module.mcounter ul.content_list li p.number .counterDX{ color:#666}
+.module.mcounter ul.content_list li div{border-color: #e9e9e9;}
+
+.module.mcustomize .header{ color:#555;}
+.module.mcustomize .description{ color:#7f7f7f}
+.module.mcustomize .description a.more{ color:#666; border-color:#bdbdbd}
+
+.mlist.service_tabs .tab_button .content_list .item_block,.mlist.service_tabs .tab_button .content_list .item_block.active,.mlist.service_tabs .tab_button .content_list .item_block.active:hover{ background-color:#f8f8f8; border-color:#f1f1f1}
+.mlist.service_tabs .tab_button .content_list .item_block .item_info .nums{ color:#333}
+.mlist.service_tabs .tab_button .content_list .item_block:hover .nums{ color:#fff}
+.mlist.service_tabs .tab_button .content_list .item_block .item_info .title,.mlist.service_tabs .tab_button .content_list .item_block.active:hover .title{ color:#444}
+.mlist.service_tabs .tab_button .content_list .item_block:hover .title{color: #ffffff;}
+.mlist.service_tabs .tab_button .content_list .item_block .item_info .subtitle,.mlist.service_tabs .tab_button .content_list .item_block.active:hover .subtitle{ color:#9e9e9e}
+.mlist.service_tabs .tab_button .content_list .item_block:hover .subtitle{color: rgba(255,255,255,.7);}
+.mlist.service_tabs .tab_content_wrapper{border-color:#eaeaea;}
+.mlist.service_tabs .tab_content .tab_indexs span {color: #dbdada;}
+.mlist.service_tabs .tab_content .content_list .item_block .item_info .title{color: #444;}
+.mlist.service_tabs .tab_content .content_list .item_block .item_info .subtitle{color: #9e9e9e;}
+.mlist.service_tabs .tab_content .content_list .item_block .item_info .description{color: #666;}
+.mlist.service_tabs .tab_content .owl-theme .owl-nav{background-color: #fff;}
+.mlist.service_tabs .tab_content .owl-theme .owl-nav > div{background-color: #f8f8f8;border-color:#f1f1f1;}
+
+.mlistpost.project #postWrapper #postInfo .wrapper .title{ color:#444}
+.mlistpost.project #postWrapper #postInfo .wrapper .subtitle{ color:#9e9e9e}
+.mlistpost.project #postWrapper #postInfo .wrapper .description{color: #666; border-color:#eaeaea}
+.mlistpost.project #postWrapper #listContent > .item_tags{ border-color:#eaeaea}
+.item_tags{ color:#7f7f7f}
+.item_tags a{ background:#f8f8f8; color:#7f7f7f}
+.item_tags a:hover{ color:#000}
+
+.mlist.team .content_list .item_block .item_wrapper{ background-color:#f8f8f8}
+.mlist.team .content_list .item_block .item_info .title{ color:#444}
+.mlist.team .content_list .item_block .item_info .subtitle{ color:#9e9e9e}
+
+.mlist.news .content_list .item_block .item_info .title{ color:#444}
+.mlist.news .content_list .item_block .item_info .subtitle{ color:#9e9e9e}
+.mlist.news .content_list .item_block:hover .item_info .title{ color:#000}
+.mlist.news .content_list .item_block .more{ color:#5d5d5d}
+
+.mlist.imagelink .content_list .item_block{ background-color:#f8f8f8}
+
+#contactinfo h3{color: #555;}
+#contactinfo div a{border-color:#eaeaea;}
+#contactinfo div a i{ color:#9e9e9e}
+#contactform p .inputtxt{border-color:#eaeaea; color:#000}
+#contactform p .inputtxt:hover {border-color: #8c8c8c;}
+#contactform p .inputtxt.submit {border-color: #c9c9c9;}
+
+#shares a,#online_open{border-color:#eaeaea; background:#fff}
+
+#pageTarget{border-color:#eaeaea;}
+.container_target a:last-child{ color:#000}
+.container_target a{ color:#444}
+.container_target a:hover {color:#000}
+
+#pages a.active {color: #000;}
+#pages a::after{background-color:#000}
+
+.npagePage .mpageEditor .container_header .title{ color:#444;}
+.npagePage .mpageEditor .container_header .subtitle{ color:#9e9e9e}
+.npagePage .content .postbody{ color:#7f7f7f}
+.npagePage .content hr{ border-color:#eaeaea}
+
+.mlistpost.team #postWrapper #postInfo .wrapper .title{ color:#444;}
+.mlistpost.team #postWrapper #postInfo .wrapper .subtitle{ color:#9e9e9e; border-color:#eaeaea}
+.mlistpost.team #postWrapper #postInfo .wrapper .description{ color:#7f7f7f}
+
+#indexPage .mlist.news .content_list .item_block{ border-color:#eaeaea}
+.npagePage .mlist.news .content_list .item_block{ border-color:#eaeaea}
+.mlistpost.news #postInfo .title{ color:#444;}
+.mlistpost.news #postInfo .subtitle{ color:#9e9e9e; border-color:#eaeaea}
+.mlistpost.news #postContent .postbody{ color:#7f7f7f}
+.mlistpost.news #listContent .item_tags a{background-color: #f8f8f8;color: #7f7f7f;}
+
+#fixed_pmask{ background-color:#f2f2f2}
+#fixed_projectPost .fixed-container{background-color:#ffffff}
+#fixed_projectPost #postWrapper #postContent #imageWrapper{background-color:#f8f8f8}
+#fixed_projectPost #postWrapper #postInfo #postControl .button{background-color: #f8f8f8;border-color: #f1f1f1;}
+#fixed_projectPost #postWrapper #postInfo .wrapper .title{color:#444;}
+#fixed_projectPost #postWrapper #postInfo .wrapper .subtitle{color:#9e9e9e;}
+#fixed_projectPost #postWrapper #postInfo .wrapper .description{color:#7f7f7f;}
+
+.module + .module .owl-theme .owl-dots .owl-dot span{border-color:rgba(158,158,158,.5);}
+.module + .module .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{background-color:#9e9e9e;}
+.module + .module .owl-theme .owl-nav [class*="owl-"]{ color:#9e9e9e}
+.module + .module .owl-theme .owl-nav [class*="owl-"]:hover{color:#000}
+
+#postWrapper .owl-theme .owl-dots .owl-dot span{border-color:rgba(158,158,158,.5);}
+#postWrapper .owl-theme .owl-dots .owl-dot.active span,#postWrapper .owl-theme .owl-dots .owl-dot:hover span{background-color:#9e9e9e;}
+#postWrapper .owl-theme .owl-nav [class*="owl-"]{ color:#9e9e9e}
+#postWrapper .owl-theme .owl-nav [class*="owl-"]:hover{color:#000}
+
+#footer{ color:#9e9e9e}
+
+.mlist.job .content_list .item_block{ color:#444}
+.mlist.job .content_list .item_block.head .item_info,.mlist.job .content_list .item_block.head:hover .item_info{ background-color:#ffbd00}
+.mlist.job .content_list .item_block .item_info{ border-color:#eaeaea}
+.mlist.job .content_list .item_block .item_info:hover,.mlist.job .content_list .item_block.active .item_info{ background-color:#f2f2f2}
+.mlist.job .content_list .item_block .item_info:hover p.title,.mlist.job .content_list .item_block.active p.title{ color:#000}
+.mlist.job .content_list .item_block.head .item_info:hover p.title{color:#fff}
+.mlist.job .content_list .item_block p.more a:hover i{color:#ffbd00}
+.mlist.job .content_list .item_block .description{ border-color:#eaeaea}
+.mlist.job .content_list .item_block .description a.more{background-color:#ffbd00; color:#fff}
+
+@media screen and (max-width:767px) {
+	#sitecontent .mlist.project .content_list .item_block .item_wrapper{background-color: #f8f8f8;}
+	.mlist.project .content_list .item_block .item_info{ color:#000}
+}
+
+#fixed_newsPost .fixed-wrap,#fixed_newsPost .fixed-container,#fixed_teamPost #postWrapper,#fixed_newsPost #postWrapper{ background:#fff}
